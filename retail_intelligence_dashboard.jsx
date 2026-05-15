@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { LineChart, Line, BarChart, Bar, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine, Area, AreaChart, RadarChart, Radar, PolarGrid, PolarAngleAxis, Cell, PieChart, Pie } from "recharts";
+import { LineChart, Line, BarChart, Bar, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine, Area, AreaChart, RadarChart, Radar, PolarGrid, PolarAngleAxis, Cell, PieChart, Pie, ComposedChart } from "recharts";
 
 // ─── Synthetic Data Generators ────────────────────────────────────────────────
 const REGIONS = ["Punjab", "Maharashtra", "Karnataka", "Delhi NCR", "Tamil Nadu"];
@@ -510,9 +510,6 @@ export default function RetailIntelligenceDashboard() {
     </div>
   );
 }
-
-// ─── Composed Forecast Chart (custom — recharts ComposedChart) ─────────────────
-import { ComposedChart, ComposedChart as CC } from "recharts";
 
 function ComposedForecastChart({ data }) {
   return (
